@@ -1,14 +1,10 @@
 # Frosted Glass
 or foggy glass, blurred div on a background, blah blah blah, etc.
 
-```css
+### Technique 1: Photoshop
 
-.no_bacon {
-  im: sad;
-}
 
-.i_hate {
-  everything: !;
-}
+### Technique 2: ::before
 
-```
+
+### Technique 3: <img>
