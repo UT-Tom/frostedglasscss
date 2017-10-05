@@ -7,4 +7,4 @@ or foggy glass, blurred div on a background, blah blah blah, etc.
 ### Technique 2: ::before
 
 
-### Technique 3: <img>
+### Technique 3: &lt;img&gt;
