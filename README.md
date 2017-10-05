@@ -8,3 +8,4 @@ or foggy glass, blurred div on a background, blah blah blah, etc.
 
 
 ### Technique 3: Raw positioning &lt;img&gt;
+
