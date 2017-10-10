@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Frosted Glass</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./technique2.css">
   </head>
   <body>
     <div class="wrap">
 
       <h1>Frosted Glass Techniques</h1>
-      <p>because blur.</p>
+      <p>because bugs.</p>
 
       <hr/>
 
@@ -31,7 +31,52 @@
 
       <h2>Technique #2</h2>
 
-      <p>test</p>
+	  <blockquote>
+	  	Apparently this is weird on Mac Chrome.<br/>
+	  	When you adjust the <strong>height</strong> of the window, the div's<br/>
+	  	background will not adjust with you.<br/>
+	  	But adjusting the <strong>width</strong> works fine..
+	  </blockquote>
+
+	  <p>This technique is all about toying with the ::before selector of the div.</p>
+	  
+	  <p>Take a regular background image</p>
+	  
+	  <p><img src="back.jpg" width="160px" height="90px;"></p>
+
+	  <p>and set the body's background to the image.</p>
+
+      <pre>
+body {
+  background: url('original_background.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}</pre>
+      
+      <p>Here's where it gets freaky.</p>
+      
+      <p>Create empty content in the div's ::before then set its z-index to -1.</p>
+
+      <pre>
+.my_div::before {
+  content: ' ';
+  z-index: -1; /* places the blurred mess behind the div's content */
+}</pre>
+
+	  <p>Expand this ::before pseudo-element to fit the size of the div.</p>
+
+	  <pre>
+.my_div::before {
+  content: ' ';
+  z-index: -1; /* places the blurred mess behind the div's content */
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}</pre>
+
+	  <p>The 
 
     </div>
   </body>
