@@ -31,14 +31,32 @@
 
       <h2>Technique #1</h2>
 
-      <p>Take a regular background image: <img src="back.jpg" width="160px" height="90px;"></p>
+      <p>Take a regular background image</p>
 
-      <p>Open up photoshop and blur it: <img src="back-.jpg" width="160px" height="90px;"></p>
+      <p><img src="back.jpg" width="160px" height="90px;"></p>
 
-      <p>Set the body's background to background.jpg and the div's background to background-blurred.jpg.</p>
+      <p>and blur it however you like in Gimp/Photoshop:</p>
+
+      <p><img src="back-.jpg" width="160px" height="90px;"></p>
+
+      <p>Save the original and blurred image.</p>
+
+      <p>Set the body's background to the original image and the div's background to the blurred image.</p>
+
+      <h3>CSS</h3>
+
+      <pre>
+body {
+  background: url('back.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+      </pre>
 
       <p>magik</p>
 
     </div>
   </body>
 </html>
+
