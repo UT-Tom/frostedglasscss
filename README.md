@@ -1,5 +1,4 @@
 # Frosted Glass
-or foggy glass, blurred div on a background, blah blah blah, etc.
 
 ### Technique 1: Photoshop
 Take a regular background image
@@ -99,13 +98,17 @@ body {
 
 <img src="./example1.png" alt="">
 
-<p>The solution to this issue is to expand the pseudo-element past its parent.</p>
+<p>The solution to this issue is to expand the pseudo-element past its parent then hide the overflow.</p>
 
 <p>That way we get a clean blur all around.</p>
 
 <img src="./example2.png" alt="">
 
 ```css
+.my_div {
+  overflow: hidden;
+}
+
 .my_div::before {
   content: ' ';
   z-index: -1; /* places the blurred mess behind the div's content */
