@@ -61,19 +61,49 @@ body {
   z-index: -1; /* places the blurred mess behind the div's content */
 }</pre>
 
-	  <p>Expand this ::before pseudo-element to fit the size of the div.</p>
+	  <p>Expand this ::before pseudo-element to fit the size of the div. Then filter it.</p>
 
 	  <pre>
 .my_div::before {
   content: ' ';
   z-index: -1; /* places the blurred mess behind the div's content */
 
-  position: absolute;
+  position: absolute; /* expand */
   width: 100%;
   height: 100%;
+
+  filter: blur(3px); /* filter */
+  -moz-filter: blur(3px);
+  -webkit-filter: blur(3px);
 }</pre>
 
-	  <p>The
+	  <p>What you'll notice is that the top &amp; left edges of this div won't be blurred.</p>
+
+    <p>This is because filter affects the entire pseudo-element within its parent as seen below.</p>
+
+    <img src="./example1.png" alt="">
+
+    <p>The solution to this issue is to expand the pseudo-element past its parent.</p>
+
+    <p>That way we get a clean blur all around.</p>
+
+    <img src="./example2.png" alt="">
+
+    <pre>
+.my_div::before {
+  content: ' ';
+  z-index: -1; /* places the blurred mess behind the div's content */
+
+  position: absolute; /* expand */
+  <b>width: 110%;
+  height: 110%;</b> /*  expand past its parent's boundaries */
+  <b>top: -15px;
+  left: -15px;</b> /* position it to fill the top &amp; left edges */
+
+  filter: blur(3px); /* filter */
+  -moz-filter: blur(3px);
+  -webkit-filter: blur(3px);
+}</pre>
 
     </div>
   </body>
