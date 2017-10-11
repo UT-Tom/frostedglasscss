@@ -21,9 +21,6 @@
           <li>
             <a href="./technique2.html">Technique #2</a>
           </li>
-          <li>
-            <a href="./technique3.html">Technique #3</a>
-          </li>
         </ul>
       </div>
 
@@ -32,16 +29,16 @@
       <h2>Technique #2</h2>
 
 	  <blockquote>
-	  	Apparently this is weird on Mac Chrome.<br/>
+	  	This gets weird on Chrome.<br/>
 	  	When you adjust the <strong>height</strong> of the window, the div's<br/>
 	  	background will not adjust with you.<br/>
 	  	But adjusting the <strong>width</strong> works fine..
 	  </blockquote>
 
 	  <p>This technique is all about toying with the ::before selector of the div.</p>
-	  
+
 	  <p>Take a regular background image</p>
-	  
+
 	  <p><img src="back.jpg" width="160px" height="90px;"></p>
 
 	  <p>and set the body's background to the image.</p>
@@ -53,9 +50,9 @@ body {
   background-position: center;
   background-attachment: fixed;
 }</pre>
-      
+
       <p>Here's where it gets freaky.</p>
-      
+
       <p>Create empty content in the div's ::before then set its z-index to -1.</p>
 
       <pre>
@@ -70,13 +67,13 @@ body {
 .my_div::before {
   content: ' ';
   z-index: -1; /* places the blurred mess behind the div's content */
-  
+
   position: absolute;
   width: 100%;
   height: 100%;
 }</pre>
 
-	  <p>The 
+	  <p>The
 
     </div>
   </body>

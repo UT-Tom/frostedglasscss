@@ -10,6 +10,12 @@ body {
   background-position: center;
 }
 
+pre {
+  background-color: #222;
+  padding: 10px;
+  border-radius: 3px;
+}
+
 .wrap {
   background: url('back-.jpg') no-repeat;
   background-size: cover;
