@@ -114,10 +114,10 @@ body {
   z-index: -1; /* places the blurred mess behind the div's content */
 
   position: absolute; /* expand */
-  <b>width: 110%;
-  height: 110%;</b> /*  expand past its parent's boundaries */
-  <b>top: -15px;
-  left: -15px;</b> /* position it to fill the top &amp; left edges */
+  width: 110%;
+  height: 110%; /*  expand past its parent's boundaries */
+  top: -15px;
+  left: -15px; /* position it to fill the top &amp; left edges */
 
   filter: blur(3px); /* filter */
   -moz-filter: blur(3px);
