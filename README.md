@@ -118,6 +118,8 @@ body {
   height: 110%; /*  expand past its parent's boundaries */
   top: -15px;
   left: -15px; /* position it to fill the top &amp; left edges */
+  
+  /* This can actually be replaced with transform: scale(1.03); */
 
   filter: blur(3px); /* filter */
   -moz-filter: blur(3px);
@@ -127,4 +129,4 @@ body {
 
 ## Conclusion
 
-Obviously using technique #1 would produce a bit more load time, but check out technique #2. On a slower windows computer running chrome, technique #2 slows down the page's maneuverability. It's your choice. A few Mb of load time versus not being able to scroll smoothly.
+Obviously using technique #1 would produce a bit more load time, but check out technique #2. On a slower windows computer running chrome, technique #2 slows down the page's maneuverability. It's your choice. A few Kb more load time vs choppy scrolling.
