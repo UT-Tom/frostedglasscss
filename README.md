@@ -1,5 +1,5 @@
 # Frosted Glass
-
+## Created by Brice Allard of Brice Allard Co. Copyright Brice Allard of Brice Allard Co.
 ### Technique 1: Photoshop
 Take a regular background image
 
